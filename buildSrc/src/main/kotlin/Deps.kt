@@ -20,7 +20,7 @@ object Deps {
     // Koin
     val Koin = "io.insert-koin:koin-core:3.2.2".asDefaultDepLambda() +
             "io.insert-koin:koin-annotations:1.0.3".asDefaultDepLambda() +
-            "io.insert-koin:koin-ksp-compiler:1.0.3".asDefaultDepLambda()
+            "io.insert-koin:koin-ksp-compiler:1.0.3".asKspDepLambda()
 
     // Compose destinations
     val ComposeDestinations = "io.github.raamcosta.compose-destinations:core:1.7.22-beta".asDefaultDepLambda() +

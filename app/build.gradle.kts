@@ -1,9 +1,4 @@
 setupApplication("vlad.makarenko.initialproject")
-//setupKsp()
-
-//android {
-//
-//}
 
 dependencies {
     Deps.run {
