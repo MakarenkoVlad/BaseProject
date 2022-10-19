@@ -1,8 +1,5 @@
-import com.android.build.api.dsl.CommonExtension
-import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.plugins.ExtensionAware
-import org.gradle.kotlin.dsl.getByType
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
 fun Project.setupCommon(namespace: String) {
@@ -10,7 +7,7 @@ fun Project.setupCommon(namespace: String) {
     pluginManager.apply("com.google.devtools.ksp")
     applyCommonExtension {
         this.namespace = namespace
-        compileSdk = 32
+        compileSdk = Config.COMPILE_SDK
 
         defaultConfig {
             minSdk = Config.MIN_SDK

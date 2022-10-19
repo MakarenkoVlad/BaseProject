@@ -1,4 +1,5 @@
 setupApplication("vlad.makarenko.initialproject")
+setupCompose()
 
 dependencies {
     Deps.run {
